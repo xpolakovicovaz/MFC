@@ -64,6 +64,7 @@ BEGIN_MESSAGE_MAP(CHelloWorldDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_BUTTON1, &CHelloWorldDlg::OnBnClickedButton1)
 END_MESSAGE_MAP()
 
 
@@ -152,3 +153,10 @@ HCURSOR CHelloWorldDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CHelloWorldDlg::OnBnClickedButton1()
+{
+	// TODO: Add your control notification handler code here
+	AfxMessageBox(L"test");
+}
